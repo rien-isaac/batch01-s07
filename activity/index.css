@@ -10,10 +10,34 @@ td {
 }
 
 .box-cell {
-  border: white 1px solid;
+  border: gray 1px solid;
   height: 1.5rem;
   width: 1.5rem;
   text-align: center;
   font-size: 0.5rem;
   font-weight: 700;
+  position: relative;
+}
+
+.pacman {
+  /* background-color: yellow; */
+  background: url("./img/pacman.jpg");
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ghost {
+  background-color: blue;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

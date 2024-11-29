@@ -126,7 +126,7 @@ function checkCollission() {
         pacman.health -= ghost[i].health;
         if (pacman.health <= 0) {
           pacman.health = 0;
-          alert("Talo");
+          alert("Game Over");
         }
       }
 
@@ -137,13 +137,18 @@ function checkCollission() {
 }
 
 function player() {
+  let pacmanDiv = document.createElement("div");
+  pacmanDiv.classList.add("pacman");
+
   let pacmanVis = playGroundDisplay.rows[pacman.positionX].cells;
-  pacmanVis[pacman.positionY].textContent = "P";
+  pacmanVis[pacman.positionY].appendChild(pacmanDiv);
 }
 
 function spawnGhost() {
   for (let i = 0; i < ghost.length; i++) {
+    let ghostDiv = document.createElement("div");
+    ghostDiv.classList.add("ghost");
     let ghostVis = playGroundDisplay.rows[ghost[i].x].cells;
-    ghostVis[ghost[i].y].textContent = "G";
+    ghostVis[ghost[i].y].appendChild(ghostDiv);
   }
 }
