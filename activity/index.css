@@ -12,6 +12,7 @@ body {
   justify-content: center;
 
   font-family: sans-serif;
+  position: relative;
 }
 
 .container {
@@ -86,4 +87,25 @@ td {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.instruction {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  top: 0;
+  left: 0;
+
+  padding: 1rem 2rem;
+}
+
+.control-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.control-instruction {
+  font-size: 1rem;
 }
