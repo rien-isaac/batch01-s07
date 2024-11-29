@@ -5,25 +5,29 @@ const playGround = [];
 let ghost = [
   {
     health: 5,
-    x: 8,
-    y: 25,
+    x: createRandomNumber(),
+    y: createRandomNumber(),
   },
   {
     health: 8,
-    x: 19,
-    y: 3,
+    x: createRandomNumber(),
+    y: createRandomNumber(),
   },
   {
     health: 11,
-    x: 16,
-    y: 1,
+    x: createRandomNumber(),
+    y: createRandomNumber(),
   },
   {
     health: 7,
-    x: 27,
-    y: 20,
+    x: createRandomNumber(),
+    y: createRandomNumber(),
   },
 ];
+
+function createRandomNumber() {
+  return Math.floor(Math.random() * 32);
+}
 
 // Table
 for (let i = 0; i < size; i++) {
@@ -33,6 +37,8 @@ for (let i = 0; i < size; i++) {
   }
   playGround.push(row);
 }
+
+// creating the playground
 
 const playGroundDisplay = document.getElementById("playground");
 
@@ -64,6 +70,8 @@ let pacman = {
 // for displaying in html
 let healthTxt;
 let ghostEatenTxt;
+
+// display text on start
 
 window.onload = function () {
   healthTxt = document.getElementById("health-txt");

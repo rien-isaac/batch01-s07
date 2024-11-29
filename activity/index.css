@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("./img/pacman.jpg");
+  background-size: cover;
+}
+
 td {
   background-color: black;
   color: white;
