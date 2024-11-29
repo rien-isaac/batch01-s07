@@ -77,6 +77,7 @@ window.onload = function () {
   healthTxt = document.getElementById("health-txt");
   ghostEatenTxt = document.getElementById("ghost-eaten");
   healthTxt.textContent = pacman.health;
+  ghostEatenTxt.textContent = ghostEaten;
 
   spawnGhost();
   update();

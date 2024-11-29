@@ -5,8 +5,49 @@
 }
 
 body {
-  background-image: url("./img/pacman.jpg");
+  background-image: url("./img/background.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+  color: yellow;
+  text-align: center;
+}
+
+h1,
+p {
+  color: yellow;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+table {
+  width: fit-content;
+  margin: auto;
+  border-spacing: none;
+  border-collapse: collapse;
 }
 
 td {
